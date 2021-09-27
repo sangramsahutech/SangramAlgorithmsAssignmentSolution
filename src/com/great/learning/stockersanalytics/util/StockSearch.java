@@ -11,12 +11,12 @@ public class StockSearch {
 			if(srtOrd == "A") {
 				if(inpArr[mid] > key) 
 					return binarySearch(inpArr, left, mid-1, key, srtOrd);
-				return binarySearch(inpArr, mid, right, key, srtOrd);
+				return binarySearch(inpArr, mid+1, right, key, srtOrd);
 			}
 			else if(srtOrd == "D") {
 				if(inpArr[mid] < key) 
 					return binarySearch(inpArr, left, mid-1, key, srtOrd);
-				return binarySearch(inpArr, mid, right, key, srtOrd);
+				return binarySearch(inpArr, mid+1, right, key, srtOrd);
 			}
 		}
 		return false;
